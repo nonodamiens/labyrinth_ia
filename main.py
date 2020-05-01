@@ -8,11 +8,14 @@ from pygame.locals import *
 
 pygame.init()
 
-fenetre = pygame.display.set_mode((window_size, window_size))
+window = pygame.display.set_mode((window_size, window_size))
 
 # Boucle
-continuer = True
-while continuer:
-    for event in pygame.event.get():
-        if event.type == QUIT:
-            continuer = False
+go_on = True
+title = True
+while go_on:
+    while title:
+        for event in pygame.event.get():
+            if event.type == QUIT:
+                title = False
+                go_on = False
