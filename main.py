@@ -1,7 +1,8 @@
 # coding: utf-8
 
-import classes
-import constantes
+from classes import *
+from constantes import *
+
 import pygame
 from pygame.locals import *
 
