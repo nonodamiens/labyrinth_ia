@@ -26,38 +26,38 @@ class lab:
 class NomDeMaClasse:
     """Docstring de ma classe"""
     
-    attribut_de_classe = valeur
+    attribut_de_classe = 'valeur'
 
     def __init__(self, arg1, arg2): # Méthode constructeur
         """Docstring de notre constructeur"""
         self.attribut1 = arg1
         self.attribut2 = arg2
-        self.attribut3 = valeur
+        self.attribut3 = 'valeur'
 
         self._attribut_caché # Attribut interdit d'accés externe (convention)
 
-        NomDeMaClasse.attribut_de_classe = valeur # exemple compteur.objet_crees += 1
+        NomDeMaClasse.attribut_de_classe = 'valeur' # exemple compteur.objet_crees += 1
 
     def methode1(self, arg): # Une méthode
         """Docstring de la methode1"""
         self.attribut1 = arg
-        self.attribut2 = valeur
+        self.attribut2 = 'valeur'
 
     def methode_de_classe(cls):
         """Docstring de la methode de classe"""
-        cls.attribut_de_classe = valeur
+        cls.attribut_de_classe = 'valeur'
 
     attribut_de_classe2 = classmethod(methode_de_classe)
 
     def methode_static():
         """Docstring de la methode statique"""
-        attribut = valeur
+        attribut = 'valeur'
     
     attribut_de_classe3 = staticmethod(methode_static)
 
     def _methode_caché(self):
         """Docstring de la methode cachée (non accessible à l'extérieur de la classe par convention)"""
-        return valeur
+        return 'valeur'
 
     def _get_attribut_caché(self):
         """Méthode cachée qui sera appelée quand on souhaitera accéder en lecture à l'attribut _attribut_caché"""
