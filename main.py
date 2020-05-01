@@ -10,6 +10,8 @@ pygame.init()
 
 window = pygame.display.set_mode((window_size, window_size))
 
+pygame.display.set_caption(title)
+
 # Boucle
 go_on = True
 title = True
