@@ -16,8 +16,9 @@ pygame.display.set_caption(title)
 go_on = True
 title = True
 while go_on:
-    while title:
-        for event in pygame.event.get():
-            if event.type == QUIT:
-                title = False
-                go_on = False
+    pygame.time.Clock().tick(30)
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            go_on = False
+    
+    pygame.display.flip()

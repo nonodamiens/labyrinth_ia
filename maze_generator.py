@@ -81,7 +81,9 @@ while go:
                 for j, c in enumerate(r):
                     if c == ' ':
                         pygame.draw.rect(fenetre, (200, 200, 200), (j * 10, i * 10, 10, 10))
-            pygame.display.flip()    
+            pygame.display.flip()
+
+        
 
 
 # class maze:
